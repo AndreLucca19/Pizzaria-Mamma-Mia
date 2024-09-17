@@ -18,6 +18,7 @@ header {
 header .logo img {
     height: 100px; 
     width: auto;
+    border-radius: 50%;
 }
 
 header .container {
@@ -98,4 +99,25 @@ h2 {
 
 .card-content p {
     color: #666;
+}
+
+.link-nav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding: 10px;
+    font-size: 24.4px;
+    transition: color 0.7s;
+}
+
+.link-nav:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.site-footer{
+    background-color: #eb1e1e;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
 }
