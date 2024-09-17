@@ -11,9 +11,9 @@ body {
 }
 
 header {
-    background: #eb1e1e;
+    background: #eb1e1e; 
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0; 
 }
 
 header .container {
@@ -22,9 +22,48 @@ header .container {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0 20px; 
 }
 
-header .logo {
-    font-size: 24px;
+header .logo img {
+    height: 100px; 
+    width: auto;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #ffd900; 
+}
+
+main .welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+main .welcome h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+main .welcome p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
 }
