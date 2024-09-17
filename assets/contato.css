@@ -104,3 +104,21 @@ header .logo {
     margin-top: 20px;
     color: #fff;
 }
+
+.autores{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.autores:hover{
+    transform: scale(1.1);
+}
+.contact{
+    align-items: center;
+    
+}
