@@ -11,9 +11,14 @@ body {
 }
 
 header {
+
     background: #eb1e1e; 
     color: #fff;
     padding: 20px 0; 
+    background: #eb1e1e;
+    color: #fff;
+    padding: 10px 0;
+
 }
 
 header .container {
@@ -22,6 +27,7 @@ header .container {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+
     padding: 0 20px; 
 }
 
@@ -66,4 +72,9 @@ main .welcome p {
     font-size: 18px;
     color: #666;
     margin-top: 10px;
+    padding: 0 auto;
+}
+
+header .logo {
+    font-size: 24px;
 }
