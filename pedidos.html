@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/pedidos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+
+                <img src="img/Logo.jpg" alt="Logo da Pizzaria Mamma-Mia">
+            </div>
+            <nav>
+                <ul>
+                    <li class="link-nav"> <a href="index.html">Home</a></li>
+                    <li class="link-nav"> <a href="contato.html">Contato</a></li>
+                    <li class="link-nav"> <a href="cardapio.html">Cardapio</a></li>
+                    
+                </ul>
+    </header>
+
+    <div class="container1">
+        <h1>Faça seu Pedido</h1>
+        <form action="/submit_pedido" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+    
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+    
+            <label for="produto">Selecione o Sabor da Pizza</label>
+            <select id="produto" name="produto" required>
+                <option value="">Selecione o sabor</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="portuguesa">Portuguesa</option>
+                <option value="frango_catupiry">Frango com Catupiry</option>
+                <option value="quatro_queijos">Quatro Queijos</option>
+                <option value="marguerita">Marguerita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="atum">Atum</option>
+                <option value="napolitana">Napolitana</option>
+            </select>
+    
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" placeholder="Digite a quantidade de pizzas" required>
+    
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>
