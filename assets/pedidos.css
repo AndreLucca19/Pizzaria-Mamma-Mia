@@ -179,4 +179,6 @@ header .logo {
     padding: 10px;
     margin-top: 20px;
     color: #fff;
+    width: 100%;
+    margin: 20px/*  */;
 }
