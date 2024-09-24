@@ -119,6 +119,6 @@ header .logo {
     transform: scale(1.1);
 }
 .contact{
-    align-items: center;
+    justify-content: center;
     
 }
