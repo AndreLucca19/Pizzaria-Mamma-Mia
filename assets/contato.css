@@ -120,22 +120,19 @@ header .logo {
 }
 .contact{
     justify-content: center;
-    
+    align-items: center;
+    display: flex;
 }
 
 .icons{
     width: 30px;
     height: 30px;
-    align-items: center;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .icons-contact{
     padding: 30px;
     align-items: center;
     justify-content: space-around;
-}
-
-.container-contact{
-    background-color: #4b4b4b;
-    width: 200px;
 }
