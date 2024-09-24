@@ -122,3 +122,20 @@ header .logo {
     justify-content: center;
     
 }
+
+.icons{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.icons-contact{
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-contact{
+    background-color: #4b4b4b;
+    width: 200px;
+}
