@@ -24,6 +24,32 @@ body {
     margin-left: 45%;
 }
 
+.conteudo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color: #eb1e1e;
+    width: 35%;
+    justify-content: left;
+    margin-right: 20%;
+    margin-left: 5%;
+    text-align: center;
+    border-radius: 30px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-conteudo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-color: #fff;
+}
+
 .espaco{
     width: 70%;
     justify-content: center;
@@ -101,12 +127,12 @@ main .welcome {
 
  .welcome h2 {
     font-size: 36px;
-    color: #000000;
+    color: #ffffff;
 }
 
  .welcome p {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     margin-top: 10px;
     padding: 0 auto;
 }
