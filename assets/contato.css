@@ -65,7 +65,6 @@ header .container {
     align-items: center;
     max-width: fit-content;
     margin: 0 auto;
-
     padding: 0 20px; 
 }
 
@@ -92,7 +91,7 @@ body {
     height: 100vh;
     background-image: url('./media/pizza-pepperoni.jpg');
     background-size: 100%;
-    background-repeat: no-repeat;
+
 }
 
 header {
