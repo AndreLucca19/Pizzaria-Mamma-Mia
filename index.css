@@ -28,7 +28,8 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
     background-color: #eb1e1e;
-    width: 35%;
+    width: 500px;
+    height: 600px;
     justify-content: left;
     margin-right: 20%;
     margin-left: 5%;
@@ -38,9 +39,11 @@ body {
     margin-top: 20px;
 }
 
+
 .informacao{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .img-conteudo{
