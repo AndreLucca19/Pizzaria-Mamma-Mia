@@ -232,3 +232,17 @@ section {
     border-radius: 15px;
     align-items: stretch;
 }
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: row;
+      }
+}
+   
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+  }
