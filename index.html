@@ -24,36 +24,36 @@
                 </ul>
     </header>
 
-    <main>
-        <section class="welcome">
-            <h2>Pizzaria Mamma-Mia</h2>
-            <p>Descubra as melhores pizzas com sabores autênticos e ingredientes frescos. Sinta-se em casa!</p>
-        </section>
-    </main>
-    <hr class="espaco">
+    <section id="projetos"></section>
+        <div class="slider">
+            <div class="slide">
+                <img src="/media/pizza-catupiry.jpg" alt="Projeto 1">
+            </div>
+            <div class="slide">
+                <img src="/media/pizza-atum.jpg" alt="Projeto 2">
+            </div>
+            <div class="slide">
+                <img src="/media/pizza-portuguesa.jpg" alt="Projeto 3">
+            </div>
+            <div class="slide">
+                <img src="/media/pizza_morango_com_chocolate.jpg" alt="Projeto 4">
+            </div>
+        </div>
+    </section>
 
-    <img class="espaco-img" src="./media/pizza.png" alt="">
+    <section id="pizzaria-napole">
+        <div class="container-pizzaria">
+            <div class="info-pizzaria">
+                <h2>Pizzaria Napole</h2>
+                <p>A Pizzaria Napole é uma das pizzarias locais mais amadas pelos Poços-Caldense. Durante anos, os proprietários Wilson e Tati, junto com os funcionários, vêm desenvolvendo uma amizade com seus clientes, proporcionando uma atmosfera calorosa e amigável.</p>
+            </div>
+            <div class="image-pizzaria">
+                <img src="media/pizza-napolitana.png" alt="Pizza da Pizzaria Napole">
+            </div>
+            
+        </div>
+    </section>
 
-<div class="informacao">
-    <div class="conteudo-2">
-        <h1>Nossas Pizzas são excelentes!!</h1>
-        <p>Pizzas muito bem selecionadas aos nossos clientes</p>
-        <img class="img-conteudo" src="./media/contato.jpg" alt="">
-        <h2>Aproveite as nossas ofertas, é por tempo limitado!!</h2>
-    </div>
-
-    <div class="conteudo">
-        <h1>Pizzas com ótimas qualidades</h1>
-        <img class="img-conteudo" src="./media/pizza-catupiry.jpg" alt="">
-        <h2>Faça o seu pedido agora mesmo 😉</h2>
-    </div>
-</div>
-
-    <div class="home-desc">
-        <h2>Ofertas imperdiveis</h2>
-        <p>Novos clientes tem a oportunidade de ganhar 15% de desconto</p>
-        <p>Pizzas com grandes variedades, aproveitem a nossa oferta</p>
-    </div>
     <footer class="site-footer">
         <address class="contact-info">
             <p class="author-name">Autores: André e Leonardo</p>
@@ -64,3 +64,25 @@
     </footer>
 </body>
 </html>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showNextSlide() {
+        slides[currentIndex].style.opacity = 0;
+        currentIndex = (currentIndex + 1) % totalSlides;
+        slides[currentIndex].style.opacity = 1;
+    }
+
+    slides.forEach((slide, index) => {
+        slide.style.position = 'absolute';
+        slide.style.width = '100%';
+        slide.style.height = '100%';
+        slide.style.transition = 'opacity 0.5s ease-in-out';
+        slide.style.opacity = index === 0 ? 1 : 0;
+    });
+
+    setInterval(showNextSlide, 3000);
+</script>
