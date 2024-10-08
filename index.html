@@ -23,6 +23,37 @@
                     
                 </ul>
     </header>
+          
+    <section id="projetos"></section>
+        <div class="slider">
+            <div class="slide">
+                <img src="/media/pizza-catupiry.jpg" alt="Projeto 1">
+            </div>
+            <div class="slide">
+                <img src="/media/pizza-atum.jpg" alt="Projeto 2">
+            </div>
+            <div class="slide">
+                <img src="/media/pizza-portuguesa.jpg" alt="Projeto 3">
+            </div>
+            <div class="slide">
+                <img src="/media/pizza_morango_com_chocolate.jpg" alt="Projeto 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="pizzaria-napole">
+        <div class="container-pizzaria">
+            <div class="info-pizzaria">
+                <h2>Pizzaria Napole</h2>
+                <p>A Pizzaria Napole é uma das pizzarias locais mais amadas pelos Poços-Caldense. Durante anos, os proprietários Wilson e Tati, junto com os funcionários, vêm desenvolvendo uma amizade com seus clientes, proporcionando uma atmosfera calorosa e amigável.</p>
+            </div>
+            <div class="image-pizzaria">
+                <img src="media/pizza-napolitana.png" alt="Pizza da Pizzaria Napole">
+            </div>
+            
+        </div>
+    </section>
+
     <hr class="espaco">
 
     <img class="espaco-img" src="./media/pizza.png" alt="">
@@ -37,3 +68,25 @@
     </footer>
 </body>
 </html>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showNextSlide() {
+        slides[currentIndex].style.opacity = 0;
+        currentIndex = (currentIndex + 1) % totalSlides;
+        slides[currentIndex].style.opacity = 1;
+    }
+
+    slides.forEach((slide, index) => {
+        slide.style.position = 'absolute';
+        slide.style.width = '100%';
+        slide.style.height = '100%';
+        slide.style.transition = 'opacity 0.5s ease-in-out';
+        slide.style.opacity = index === 0 ? 1 : 0;
+    });
+
+    setInterval(showNextSlide, 3000);
+</script>
